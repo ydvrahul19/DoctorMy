@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { assets } from '../assets/assets'
+import { assets, doctors } from '../assets/assets'
 import { motion } from 'framer-motion'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -14,6 +14,31 @@ const AboutUs = () => {
       once: true
     });
   }, []);
+
+  // Find the specific doctors
+  const drPriya = doctors.find(doc => doc.name === 'Dr. Priya Sharma');
+  const drAmit = doctors.find(doc => doc.name === 'Dr. Amit Patel');
+
+  const teamMembers = [
+    { 
+      name: 'Dr. Rahul Yadav', 
+      role: 'Founder & CEO', 
+      image: assets.profile_pic,
+      description: 'Leading innovation in healthcare technology'
+    },
+    { 
+      name: 'Dr. Priya Sharma', 
+      role: 'Medical Director', 
+      image: drPriya?.image,
+      description: drPriya?.about
+    },
+    { 
+      name: 'Dr. Amit Patel', 
+      role: 'Chief of Operations', 
+      image: drAmit?.image,
+      description: drAmit?.about
+    }
+  ];
 
   return (
     <div className="min-h-screen">
@@ -132,11 +157,7 @@ const AboutUs = () => {
           </p>
         </motion.div>
         <div className="grid md:grid-cols-3 gap-8">
-          {[
-            { name: 'Dr. Rahul Yadav', role: 'Founder & CEO', image: assets.profile_pic },
-            { name: 'Dr. Priya Sharma', role: 'Medical Director', image: assets.doc1 },
-            { name: 'Dr. Amit Patel', role: 'Chief of Operations', image: assets.doc2 }
-          ].map((member, index) => (
+          {teamMembers.map((member, index) => (
             <motion.div
               key={index}
               data-aos="fade-up"
@@ -144,17 +165,18 @@ const AboutUs = () => {
               whileHover={{ y: -10 }}
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
             >
-              <div className="relative">
+              <div className="relative h-72">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <img 
                   src={member.image} 
                   alt={member.name} 
-                  className="w-full h-64 object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6 text-center">
+              <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{member.name}</h3>
-                <p className="text-blue-600">{member.role}</p>
+                <p className="text-blue-600 mb-4">{member.role}</p>
+                <p className="text-gray-600 text-sm">{member.description}</p>
               </div>
             </motion.div>
           ))}

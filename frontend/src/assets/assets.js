@@ -93,8 +93,8 @@ export const specialityData = [
 export const doctors = [
     {
         _id: 'doc1',
-        name: 'Dr. Rajesh Kumar',
-        image: doc1,
+        name: 'Dr. Meera Reddy',
+        image: doc4,
         speciality: 'General Physician',
         degree: 'MBBS, MD',
         experience: '15 Years',
@@ -106,13 +106,13 @@ export const doctors = [
         }
     },
     {
-        _id: 'doc2',
-        name: 'Dr. Priya Sharma',
-        image: doc2,
+        _id: 'doc5',
+        name: 'Dr. Suresh Iyer',
+        image: doc5,
         speciality: 'Gynecologist',
         degree: 'MBBS, MS',
         experience: '12 Years',
-        about: 'Dr. Sharma is a renowned gynecologist specializing in women\'s health and reproductive medicine. She is known for her patient-centric approach and expertise in managing high-risk pregnancies.',
+        about: 'Dr. Iyer is a renowned gynecologist specializing in women\'s health and reproductive medicine. She is known for her patient-centric approach and expertise in managing high-risk pregnancies.',
         fees: 1000,
         address: {
             line1: 'Koregaon Park',
@@ -121,12 +121,12 @@ export const doctors = [
     },
     {
         _id: 'doc3',
-        name: 'Dr. Amit Patel',
-        image: doc3,
+        name: 'Dr. Anjali Desai',
+        image: doc6,
         speciality: 'Dermatologist',
         degree: 'MBBS, MD',
         experience: '10 Years',
-        about: 'Dr. Patel is a skilled dermatologist specializing in both medical and cosmetic dermatology. He is known for his expertise in treating complex skin conditions and modern aesthetic procedures.',
+        about: 'Dr. Desai is a skilled dermatologist specializing in both medical and cosmetic dermatology. He is known for his expertise in treating complex skin conditions and modern aesthetic procedures.',
         fees: 900,
         address: {
             line1: 'Kalyani Nagar',
@@ -135,12 +135,12 @@ export const doctors = [
     },
     {
         _id: 'doc4',
-        name: 'Dr. Meera Reddy',
-        image: doc4,
+        name: 'Dr.  Rajesh Kumar',
+        image: doc1,
         speciality: 'Pediatrician',
         degree: 'MBBS, MD',
         experience: '8 Years',
-        about: 'Dr. Reddy is a compassionate pediatrician who specializes in child healthcare and development. She is particularly skilled in managing childhood allergies and developmental disorders.',
+        about: 'Dr. Kumar is a compassionate pediatrician who specializes in child healthcare and development. She is particularly skilled in managing childhood allergies and developmental disorders.',
         fees: 700,
         address: {
             line1: 'Aundh',
@@ -149,12 +149,12 @@ export const doctors = [
     },
     {
         _id: 'doc5',
-        name: 'Dr. Suresh Iyer',
-        image: doc5,
+        name: 'Dr. Priya Sharma',
+        image: doc2,
         speciality: 'Neurologist',
         degree: 'MBBS, DM',
         experience: '20 Years',
-        about: 'Dr. Iyer is a distinguished neurologist with extensive experience in treating neurological disorders. He specializes in stroke management and neurodegenerative diseases.',
+        about: 'Dr. Sharma is a distinguished neurologist with extensive experience in treating neurological disorders. She specializes in stroke management and neurodegenerative diseases.',
         fees: 1200,
         address: {
             line1: 'Shivaji Nagar',
@@ -163,12 +163,12 @@ export const doctors = [
     },
     {
         _id: 'doc6',
-        name: 'Dr. Anjali Desai',
-        image: doc6,
+        name: 'Dr. Amit Patel',
+        image: doc3,
         speciality: 'Cardiologist',
         degree: 'MBBS, DM',
         experience: '14 Years',
-        about: 'Dr. Desai is a leading cardiologist known for her expertise in interventional cardiology. She specializes in preventive cardiology and management of complex cardiac conditions.',
+        about: 'Dr. Patel is a leading cardiologist known for his expertise in interventional cardiology. He specializes in preventive cardiology and management of complex cardiac conditions.',
         fees: 1100,
         address: {
             line1: 'Baner',

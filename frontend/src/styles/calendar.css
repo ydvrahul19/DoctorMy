@@ -1,0 +1,86 @@
+.calendar-popper {
+  z-index: 1002 !important;
+}
+
+.booking-calendar {
+  font-family: system-ui, -apple-system, sans-serif;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  padding: 1rem !important;
+  background-color: white !important;
+}
+
+.booking-calendar .react-datepicker__header {
+  background-color: white !important;
+  border-bottom: none !important;
+  padding-top: 0.5rem !important;
+}
+
+.booking-calendar .react-datepicker__current-month {
+  color: #1a365d !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.booking-calendar .react-datepicker__day-name {
+  color: #4a5568 !important;
+  font-weight: 500 !important;
+  width: 2rem !important;
+  margin: 0.2rem !important;
+}
+
+.booking-calendar .react-datepicker__day {
+  width: 2rem !important;
+  height: 2rem !important;
+  line-height: 2rem !important;
+  margin: 0.2rem !important;
+  border-radius: 9999px !important;
+  color: #2d3748 !important;
+}
+
+.booking-calendar .react-datepicker__day:hover {
+  background-color: #ebf4ff !important;
+  color: #2b6cb0 !important;
+}
+
+.booking-calendar .react-datepicker__day--selected {
+  background-color: #3182ce !important;
+  color: white !important;
+}
+
+.booking-calendar .react-datepicker__day--disabled {
+  color: #cbd5e0 !important;
+  cursor: not-allowed !important;
+}
+
+.booking-calendar .react-datepicker__day--keyboard-selected {
+  background-color: #ebf4ff !important;
+  color: #2b6cb0 !important;
+}
+
+.booking-calendar .react-datepicker__navigation {
+  top: 0.75rem !important;
+}
+
+.booking-calendar .react-datepicker__navigation--previous {
+  left: 1rem !important;
+}
+
+.booking-calendar .react-datepicker__navigation--next {
+  right: 1rem !important;
+}
+
+/* Make sure the calendar is above other elements */
+.react-datepicker-popper {
+  z-index: 1002 !important;
+}
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.react-datepicker__input-container {
+  width: 100% !important;
+}
